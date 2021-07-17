@@ -631,7 +631,7 @@
 
 ​	Cookie 和 Session都是用来跟踪浏览器用户身份的会话方式，但两者有所区别：
 
-​			Cookie 数据保存在客户端(浏览器端)，Session 数据保存在服务器端。
+​			Cookie 数据保存在客户端(浏览器端)，Session 数据保存在服务器co端。
 
 ​			cookie不是很安全，别人可以分析存放在本地的COOKIE并进行欺骗,考虑到安全应当使用session。
 
@@ -3135,7 +3135,7 @@ InnoDB 支持多粒度锁（multiple granularity locking），它允许行级锁
 
 ​		1.MVCC手段只适用于Msyql隔离级别中的读已提交（Read committed）和可重复读（Repeatable Read）.
 
-​		2.Read uncimmitted由于存在脏读，即能读到未提交事务的数据行，所以不适用MVCC.
+​		2.Read uncommitted由于存在脏读，即能读到未提交事务的数据行，所以不适用MVCC.
 
 ​		3.简单的select快照度不会加锁，删改及select for update等需要当前读的场景会加锁
 
@@ -5776,7 +5776,6 @@ Hystrix区别：
 > Nacos是阿⾥巴巴开源的⼀个针对微服务架构中**服务发现**、**配置管理**和**服务管理平台**。
 >
 > Nacos就是**注册中⼼+配置中⼼**的组合（Nacos=Eureka+Confifig+Bus）
->
 
 **Nacos**功能特性
 
@@ -5986,7 +5985,6 @@ Feign+配置中心实现动态日志
 # **九、分布式篇**
 
 > 分布式系统是一个硬件或软件组件分布在不同的网络计算机上，彼此之间仅仅通过消息传递进行通信和协调的系统。
->
 
 ### **发展历程**
 
